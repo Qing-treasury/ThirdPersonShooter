@@ -1,0 +1,185 @@
+fileFormatVersion: 2
+guid: 741dba9020828b54c96a2cc1b03068fb
+timeCreated: 1518951792
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: WPN_Optical_Sight
+    100002: //RootNode
+    100004: WPN_Optical_Sight 1
+    100006: WPN_Optical_Sight 2
+    100008: WPN_Optical_Sight 3
+    100010: WPN_Optical_Sight 4
+    100012: WPN_Optical_Sight 5
+    100014: WPN_Optical_Sight 6
+    100016: WPN_Optical_Sight 7
+    100018: WPN_Optical_Sight 8
+    100020: WPN_Optical_Sight_1_000
+    100022: WPN_Optical_Sight_1_001
+    100024: WPN_Optical_Sight_1_002
+    100026: WPN_Optical_Sight_1_003
+    100028: WPN_Optical_Sight_1_004
+    100030: WPN_Optical_Sight_1_005
+    100032: WPN_Optical_Sight_1_006
+    100034: WPN_Optical_Sight_1_007
+    100036: WPN_Optical_Sight_1_008
+    400000: WPN_Optical_Sight
+    400002: //RootNode
+    400004: WPN_Optical_Sight 1
+    400006: WPN_Optical_Sight 2
+    400008: WPN_Optical_Sight 3
+    400010: WPN_Optical_Sight 4
+    400012: WPN_Optical_Sight 5
+    400014: WPN_Optical_Sight 6
+    400016: WPN_Optical_Sight 7
+    400018: WPN_Optical_Sight 8
+    400020: WPN_Optical_Sight_1_000
+    400022: WPN_Optical_Sight_1_001
+    400024: WPN_Optical_Sight_1_002
+    400026: WPN_Optical_Sight_1_003
+    400028: WPN_Optical_Sight_1_004
+    400030: WPN_Optical_Sight_1_005
+    400032: WPN_Optical_Sight_1_006
+    400034: WPN_Optical_Sight_1_007
+    400036: WPN_Optical_Sight_1_008
+    2100000: WPNM
+    2300000: WPN_Optical_Sight
+    2300002: WPN_Optical_Sight 1
+    2300004: WPN_Optical_Sight 2
+    2300006: WPN_Optical_Sight 3
+    2300008: WPN_Optical_Sight 4
+    2300010: WPN_Optical_Sight 5
+    2300012: WPN_Optical_Sight 6
+    2300014: WPN_Optical_Sight 7
+    2300016: WPN_Optical_Sight 8
+    2300018: WPN_Optical_Sight_1_000
+    2300020: WPN_Optical_Sight_1_001
+    2300022: WPN_Optical_Sight_1_002
+    2300024: WPN_Optical_Sight_1_003
+    2300026: WPN_Optical_Sight_1_004
+    2300028: WPN_Optical_Sight_1_005
+    2300030: WPN_Optical_Sight_1_006
+    2300032: WPN_Optical_Sight_1_007
+    2300034: WPN_Optical_Sight_1_008
+    3300000: WPN_Optical_Sight
+    3300002: WPN_Optical_Sight 1
+    3300004: WPN_Optical_Sight 2
+    3300006: WPN_Optical_Sight 3
+    3300008: WPN_Optical_Sight 4
+    3300010: WPN_Optical_Sight 5
+    3300012: WPN_Optical_Sight 6
+    3300014: WPN_Optical_Sight 7
+    3300016: WPN_Optical_Sight 8
+    3300018: WPN_Optical_Sight_1_000
+    3300020: WPN_Optical_Sight_1_001
+    3300022: WPN_Optical_Sight_1_002
+    3300024: WPN_Optical_Sight_1_003
+    3300026: WPN_Optical_Sight_1_004
+    3300028: WPN_Optical_Sight_1_005
+    3300030: WPN_Optical_Sight_1_006
+    3300032: WPN_Optical_Sight_1_007
+    3300034: WPN_Optical_Sight_1_008
+    4300000: WPN_Optical_Sight
+    4300002: WPN_Optical_Sight
+    4300004: WPN_Optical_Sight
+    4300006: WPN_Optical_Sight
+    4300008: WPN_Optical_Sight
+    4300010: WPN_Optical_Sight
+    4300012: WPN_Optical_Sight
+    4300014: WPN_Optical_Sight
+    4300016: WPN_Optical_Sight
+    4300018: WPN_Optical_Sight_1_006
+    4300020: WPN_Optical_Sight_1_001
+    4300022: WPN_Optical_Sight_1_002
+    4300024: WPN_Optical_Sight_1_004
+    4300026: WPN_Optical_Sight_1_003
+    4300028: WPN_Optical_Sight_1_008
+    4300030: WPN_Optical_Sight_1_005
+    4300032: WPN_Optical_Sight_1_007
+    4300034: WPN_Optical_Sight_1_000
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WPNM
+    second: {fileID: 2100000, guid: 44ec46c0abd40c44ca2992719d04e48c, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

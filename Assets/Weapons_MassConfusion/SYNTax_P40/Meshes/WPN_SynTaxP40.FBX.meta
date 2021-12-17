@@ -1,0 +1,234 @@
+fileFormatVersion: 2
+guid: d79e2981122a7484d90905336842e5be
+timeCreated: 1518950278
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: WPN_SynTaxP40_Bullet_LOD0
+    100004: WPN_SynTaxP40_Bullet_LOD1
+    100006: WPN_SynTaxP40_Bullet_LOD2
+    100008: WPN_SynTaxP40_Charging_Handle_LOD0
+    100010: WPN_SynTaxP40_Charging_Handle_LOD1
+    100012: WPN_SynTaxP40_Charging_Handle_LOD2
+    100014: WPN_SynTaxP40_Ejection_Port_LOD0
+    100016: WPN_SynTaxP40_Ejection_Port_LOD1
+    100018: WPN_SynTaxP40_Ejection_Port_LOD2
+    100020: WPN_SynTaxP40_Fire_Level_LOD0
+    100022: WPN_SynTaxP40_Fire_Level_LOD1
+    100024: WPN_SynTaxP40_Fire_Level_LOD2
+    100026: WPN_SynTaxP40_LOD0
+    100028: WPN_SynTaxP40_LOD1
+    100030: WPN_SynTaxP40_LOD2
+    100032: WPN_SynTaxP40_Magazine_LOD0
+    100034: WPN_SynTaxP40_Magazine_LOD1
+    100036: WPN_SynTaxP40_Magazine_LOD2
+    100038: WPN_SynTaxP40_Magazine_Release_LOD0
+    100040: WPN_SynTaxP40_Magazine_Release_LOD1
+    100042: WPN_SynTaxP40_Magazine_Release_LOD2
+    100044: WPN_SynTaxP40_Shell_LOD0
+    100046: WPN_SynTaxP40_Shell_LOD1
+    100048: WPN_SynTaxP40_Shell_LOD2
+    100050: WPN_SynTaxP40_Trigger_LOD0
+    100052: WPN_SynTaxP40_Trigger_LOD1
+    100054: WPN_SynTaxP40_Trigger_LOD2
+    400000: //RootNode
+    400002: WPN_SynTaxP40_Bullet_LOD0
+    400004: WPN_SynTaxP40_Bullet_LOD1
+    400006: WPN_SynTaxP40_Bullet_LOD2
+    400008: WPN_SynTaxP40_Charging_Handle_LOD0
+    400010: WPN_SynTaxP40_Charging_Handle_LOD1
+    400012: WPN_SynTaxP40_Charging_Handle_LOD2
+    400014: WPN_SynTaxP40_Ejection_Port_LOD0
+    400016: WPN_SynTaxP40_Ejection_Port_LOD1
+    400018: WPN_SynTaxP40_Ejection_Port_LOD2
+    400020: WPN_SynTaxP40_Fire_Level_LOD0
+    400022: WPN_SynTaxP40_Fire_Level_LOD1
+    400024: WPN_SynTaxP40_Fire_Level_LOD2
+    400026: WPN_SynTaxP40_LOD0
+    400028: WPN_SynTaxP40_LOD1
+    400030: WPN_SynTaxP40_LOD2
+    400032: WPN_SynTaxP40_Magazine_LOD0
+    400034: WPN_SynTaxP40_Magazine_LOD1
+    400036: WPN_SynTaxP40_Magazine_LOD2
+    400038: WPN_SynTaxP40_Magazine_Release_LOD0
+    400040: WPN_SynTaxP40_Magazine_Release_LOD1
+    400042: WPN_SynTaxP40_Magazine_Release_LOD2
+    400044: WPN_SynTaxP40_Shell_LOD0
+    400046: WPN_SynTaxP40_Shell_LOD1
+    400048: WPN_SynTaxP40_Shell_LOD2
+    400050: WPN_SynTaxP40_Trigger_LOD0
+    400052: WPN_SynTaxP40_Trigger_LOD1
+    400054: WPN_SynTaxP40_Trigger_LOD2
+    2100000: WPNM
+    2300000: WPN_SynTaxP40_Bullet_LOD0
+    2300002: WPN_SynTaxP40_Bullet_LOD1
+    2300004: WPN_SynTaxP40_Bullet_LOD2
+    2300006: WPN_SynTaxP40_Charging_Handle_LOD0
+    2300008: WPN_SynTaxP40_Charging_Handle_LOD1
+    2300010: WPN_SynTaxP40_Charging_Handle_LOD2
+    2300012: WPN_SynTaxP40_Ejection_Port_LOD0
+    2300014: WPN_SynTaxP40_Ejection_Port_LOD1
+    2300016: WPN_SynTaxP40_Ejection_Port_LOD2
+    2300018: WPN_SynTaxP40_Fire_Level_LOD0
+    2300020: WPN_SynTaxP40_Fire_Level_LOD1
+    2300022: WPN_SynTaxP40_Fire_Level_LOD2
+    2300024: WPN_SynTaxP40_LOD0
+    2300026: WPN_SynTaxP40_LOD1
+    2300028: WPN_SynTaxP40_LOD2
+    2300030: WPN_SynTaxP40_Magazine_LOD0
+    2300032: WPN_SynTaxP40_Magazine_LOD1
+    2300034: WPN_SynTaxP40_Magazine_LOD2
+    2300036: WPN_SynTaxP40_Magazine_Release_LOD0
+    2300038: WPN_SynTaxP40_Magazine_Release_LOD1
+    2300040: WPN_SynTaxP40_Magazine_Release_LOD2
+    2300042: WPN_SynTaxP40_Shell_LOD0
+    2300044: WPN_SynTaxP40_Shell_LOD1
+    2300046: WPN_SynTaxP40_Shell_LOD2
+    2300048: WPN_SynTaxP40_Trigger_LOD0
+    2300050: WPN_SynTaxP40_Trigger_LOD1
+    2300052: WPN_SynTaxP40_Trigger_LOD2
+    3300000: WPN_SynTaxP40_Bullet_LOD0
+    3300002: WPN_SynTaxP40_Bullet_LOD1
+    3300004: WPN_SynTaxP40_Bullet_LOD2
+    3300006: WPN_SynTaxP40_Charging_Handle_LOD0
+    3300008: WPN_SynTaxP40_Charging_Handle_LOD1
+    3300010: WPN_SynTaxP40_Charging_Handle_LOD2
+    3300012: WPN_SynTaxP40_Ejection_Port_LOD0
+    3300014: WPN_SynTaxP40_Ejection_Port_LOD1
+    3300016: WPN_SynTaxP40_Ejection_Port_LOD2
+    3300018: WPN_SynTaxP40_Fire_Level_LOD0
+    3300020: WPN_SynTaxP40_Fire_Level_LOD1
+    3300022: WPN_SynTaxP40_Fire_Level_LOD2
+    3300024: WPN_SynTaxP40_LOD0
+    3300026: WPN_SynTaxP40_LOD1
+    3300028: WPN_SynTaxP40_LOD2
+    3300030: WPN_SynTaxP40_Magazine_LOD0
+    3300032: WPN_SynTaxP40_Magazine_LOD1
+    3300034: WPN_SynTaxP40_Magazine_LOD2
+    3300036: WPN_SynTaxP40_Magazine_Release_LOD0
+    3300038: WPN_SynTaxP40_Magazine_Release_LOD1
+    3300040: WPN_SynTaxP40_Magazine_Release_LOD2
+    3300042: WPN_SynTaxP40_Shell_LOD0
+    3300044: WPN_SynTaxP40_Shell_LOD1
+    3300046: WPN_SynTaxP40_Shell_LOD2
+    3300048: WPN_SynTaxP40_Trigger_LOD0
+    3300050: WPN_SynTaxP40_Trigger_LOD1
+    3300052: WPN_SynTaxP40_Trigger_LOD2
+    4300000: WPN_SynTaxP40_Magazine_LOD1
+    4300002: WPN_SynTaxP40_Shell_LOD1
+    4300004: WPN_SynTaxP40_Ejection_Port_LOD1
+    4300006: WPN_SynTaxP40_Fire_Level_LOD2
+    4300008: WPN_SynTaxP40_Magazine_Release_LOD2
+    4300010: WPN_SynTaxP40_Trigger_LOD0
+    4300012: WPN_SynTaxP40_Fire_Level_LOD1
+    4300014: WPN_SynTaxP40_Charging_Handle_LOD1
+    4300016: WPN_SynTaxP40_Ejection_Port_LOD0
+    4300018: WPN_SynTaxP40_Magazine_LOD0
+    4300020: WPN_SynTaxP40_Magazine_Release_LOD0
+    4300022: WPN_SynTaxP40_Trigger_LOD2
+    4300024: WPN_SynTaxP40_Charging_Handle_LOD0
+    4300026: WPN_SynTaxP40_Bullet_LOD2
+    4300028: WPN_SynTaxP40_Shell_LOD2
+    4300030: WPN_SynTaxP40_Bullet_LOD1
+    4300032: WPN_SynTaxP40_Charging_Handle_LOD2
+    4300034: WPN_SynTaxP40_Fire_Level_LOD0
+    4300036: WPN_SynTaxP40_Ejection_Port_LOD2
+    4300038: WPN_SynTaxP40_Magazine_Release_LOD1
+    4300040: WPN_SynTaxP40_Magazine_LOD2
+    4300042: WPN_SynTaxP40_Shell_LOD0
+    4300044: WPN_SynTaxP40_Trigger_LOD1
+    4300046: WPN_SynTaxP40_Bullet_LOD0
+    4300048: WPN_SynTaxP40_LOD2
+    4300050: WPN_SynTaxP40_LOD1
+    4300052: WPN_SynTaxP40_LOD0
+    20500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WPNM
+    second: {fileID: 2100000, guid: 5ac5ba209680a9f4281fa4014c88b27d, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.125
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

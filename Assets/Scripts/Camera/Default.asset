@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02f931f2e3a26b544821d16cc757bcea, type: 3}
+  m_Name: Default
+  m_EditorClassIdentifier: 
+  Name: Default
+  tpCameraStates:
+  - Name: Default
+    forward: -1
+    right: 0.61
+    maxDistance: 1.21
+    minDistance: 0.93
+    Height: 1.5
+  - Name: Nornal
+    forward: 1
+    right: 0
+    maxDistance: 2.11
+    minDistance: 0.5
+    Height: 1.5
