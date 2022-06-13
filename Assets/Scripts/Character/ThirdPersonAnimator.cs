@@ -6,13 +6,16 @@ using UnityEngine;
 public class ThirdPersonAnimator : ThirdPersonMotor
 {
 
+    //更新动画
     public void UpdateAnimator()
     {
         ControlLocomotion();
-
+        AnimMatchPhysicParameter();
         animator.SetBool("Aiming", aiming);
+        Shooting();
     }
 
+    //控制移动
     private void ControlLocomotion()
     {
         vertical = input2D.y;
@@ -20,6 +23,7 @@ public class ThirdPersonAnimator : ThirdPersonMotor
         //animator.SetFloat("Vertical", vertical);
     }
 
+    //移动
     public void AnimMatchPhysicParameter()
     {
         if (!aiming)
@@ -33,6 +37,13 @@ public class ThirdPersonAnimator : ThirdPersonMotor
             animator.SetFloat("Vertical", vertical, 0.1f, Time.deltaTime);
             animator.SetFloat("Horizontal", horizontal, 0.1f, Time.deltaTime);
         }
+    }
 
+    public void Shooting()
+    {
+        if (shooting)
+        {
+            animator.SetTrigger("Shooting");
+        }
     }
 }

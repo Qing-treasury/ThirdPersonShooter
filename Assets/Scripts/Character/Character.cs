@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations.Rigging;
 
 public class Character : MonoBehaviour
 {
@@ -14,15 +15,23 @@ public class Character : MonoBehaviour
 
     public TPCamera tpCamera;
 
+    [HideInInspector] public float smoothAim;
+
+    [HideInInspector] public RigBuilder rigBulider;
+
     [HideInInspector] public float vertical, horizontal;
     [HideInInspector] public bool aiming = false;
+    [HideInInspector] public bool shooting = false;
     // Start is called before the first frame update
     public void InitialSetup()
     {
         tpCamera = TPCamera.instance;
 
+        smoothAim = 2f;
+
         animator = GetComponent<Animator>();
         capsuleCollider = GetComponent<CapsuleCollider>();
         _rigidbody = GetComponent<Rigidbody>();
+        rigBulider = GetComponent<RigBuilder>();
     }
 }

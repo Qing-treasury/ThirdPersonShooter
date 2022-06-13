@@ -14,9 +14,9 @@ public class ThirdPersonController : ThirdPersonAnimator
     // Update is called once per frame
     void Update()
     {
-        //HandleInput();
+        HandleInput();
         UpdateAnimator();
-        AnimMatchPhysicParameter();
+
     }
 
     private void FixedUpdate()
@@ -36,18 +36,23 @@ public class ThirdPersonController : ThirdPersonAnimator
         CameraInput();
         ControllerInput();
         AimInput();
+        ShootingInput();
     }
 
     private void AimInput()
     {
-        if(Input.GetMouseButton(1))
+        if (Input.GetMouseButton(1))
         {
             aiming = true;
+            rigBulider.layers[1].rig.weight = Mathf.Lerp(rigBulider.layers[1].rig.weight, 1, Time.deltaTime * smoothAim);
+            rigBulider.layers[2].rig.weight = Mathf.Lerp(rigBulider.layers[2].rig.weight, 1, Time.deltaTime * smoothAim);
         }
-        //else
-        //{
-        //    aiming = false;
-        //}
+        else
+        {
+            aiming = false;
+            rigBulider.layers[1].rig.weight = Mathf.Lerp(rigBulider.layers[1].rig.weight, 0, Time.deltaTime * smoothAim);
+            rigBulider.layers[2].rig.weight = Mathf.Lerp(rigBulider.layers[2].rig.weight, 0, Time.deltaTime * smoothAim);
+        }
     }
 
     void ControllerInput()
@@ -70,6 +75,27 @@ public class ThirdPersonController : ThirdPersonAnimator
         {
             tpCamera.mouseY = tpCamera.Player.localEulerAngles.x;
             tpCamera.mouseX = tpCamera.Player.localEulerAngles.y;
+        }
+
+        if (aiming)
+        {
+            tpCamera.ChangeState("Aiming", true);
+        }
+        else
+        {
+            tpCamera.ChangeState("Default", true);
+        }
+    }
+
+    void ShootingInput()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            shooting = true;
+        }
+        else
+        {
+            shooting = false;
         }
     }
 }

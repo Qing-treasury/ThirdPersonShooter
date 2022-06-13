@@ -94,7 +94,13 @@ public class TPCamera : MonoBehaviour
             currentStateName = stateName;
             lerpState = state;
             if (currentState != null && !hasSmooth)
+            {
                 currentState.CopyState(state);
+            }
+            if (hasSmooth)
+            {
+                currentState.Slerp(state, SmoothBetweenState);
+            }
             target = Player;
         }
         else
@@ -103,7 +109,13 @@ public class TPCamera : MonoBehaviour
             state = CameraStateList.tpCameraStates[0];
             lerpState = state;
             if (currentState != null && !hasSmooth)
+            {
                 currentState.CopyState(state);
+            }
+            if (hasSmooth)
+            {
+                currentState.Slerp(state, SmoothBetweenState);
+            }
             target = Player;
         }
 
@@ -141,6 +153,7 @@ public class TPCamera : MonoBehaviour
             lerpState = state;
             if (currentState != null)
                 currentState.CopyState(state);
+
             if (scopeTarget != null)
                 target = scopeTarget;
             else

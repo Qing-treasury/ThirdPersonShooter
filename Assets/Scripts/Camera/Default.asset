@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02f931f2e3a26b544821d16cc757bcea, type: 3}
   m_Name: Default
   m_EditorClassIdentifier: 
-  Name: Default
+  Name: Shooting
   tpCameraStates:
   - Name: Default
     forward: -1
     right: 0.61
-    maxDistance: 1.21
-    minDistance: 0.93
+    maxDistance: 2
+    minDistance: 0.95
     Height: 1.5
-  - Name: Nornal
-    forward: 1
-    right: 0
-    maxDistance: 2.11
-    minDistance: 0.5
+  - Name: Aiming
+    forward: -1
+    right: 0.5
+    maxDistance: 1
+    minDistance: 0.8
     Height: 1.5
