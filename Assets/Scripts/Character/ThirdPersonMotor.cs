@@ -13,8 +13,6 @@ public class ThirdPersonMotor : Character
 
     //相机的方向
     public Vector3 RefDir;
-
-
     public float Dmag;
 
     /// <summary>

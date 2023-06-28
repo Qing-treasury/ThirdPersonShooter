@@ -48,6 +48,8 @@ public class TPCamera : MonoBehaviour
     [HideInInspector] public TPCameraState lerpState;
     [HideInInspector] public Vector3 LookPoint;
     private float targetHeight;
+    public Camera mainCamera;
+    public float startCamFov;
     #endregion
 
     // Start is called before the first frame update
@@ -58,6 +60,10 @@ public class TPCamera : MonoBehaviour
 
     void Init()
     {
+        mainCamera = GetComponent<Camera>();
+        startCamFov = mainCamera.fieldOfView;
+
+
         if (Player == null)
         {
             Debug.Log("Çë·ÖÅä½ÇÉ«");
@@ -83,6 +89,8 @@ public class TPCamera : MonoBehaviour
             return;
 
         CameraMovement();
+
+        Debug.DrawRay(this.transform.position, this.transform.TransformDirection(Vector3.forward) * 10f, Color.green);
     }
 
     public void ChangeState(string stateName, bool hasSmooth)
@@ -230,25 +238,14 @@ public class TPCamera : MonoBehaviour
         Quaternion newRot = Quaternion.Euler(mouseY, mouseX, 0);
         TargetLookAt.rotation = Quaternion.Slerp(TargetLookAt.rotation, newRot, SmoothCameraRotation * Time.deltaTime);
     }
-}
 
-
-public static class ExtensionMethods
-{
-    public static void Slerp(this TPCameraState to, TPCameraState from, float time)
+    public void SetCamFov(float fov)
     {
-        to.forward = Mathf.Lerp(to.forward, from.forward, time);
-        to.right = Mathf.Lerp(to.right, from.right, time);
-        to.maxDistance = Mathf.Lerp(to.maxDistance, from.maxDistance, time);
-        to.Height = Mathf.Lerp(to.Height, from.Height, time);
+        mainCamera.fieldOfView = fov;
     }
 
-    public static void CopyState(this TPCameraState to, TPCameraState from)
+    public void ResetCamFov()
     {
-        to.forward = from.forward;
-        to.right = from.right;
-        to.maxDistance = from.maxDistance;
-        to.Height = from.Height;
+        mainCamera.fieldOfView = startCamFov;
     }
 }
-

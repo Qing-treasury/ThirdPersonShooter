@@ -22,7 +22,7 @@ MonoBehaviour:
     Height: 1.5
   - Name: Aiming
     forward: -1
-    right: 0.5
+    right: 0.8
     maxDistance: 1
-    minDistance: 0.8
+    minDistance: 0.6
     Height: 1.5

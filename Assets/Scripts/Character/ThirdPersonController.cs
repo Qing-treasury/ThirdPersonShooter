@@ -5,6 +5,13 @@ using UnityEngine;
 
 public class ThirdPersonController : ThirdPersonAnimator
 {
+    public Weapon weapon;
+
+    void Awake()
+    {
+        StartCoroutine("UpdateRaycast");
+        weapon = transform.Find("WeaponHolder").GetComponent<Weapon>();
+    }
 
     public void Start()
     {
@@ -16,7 +23,16 @@ public class ThirdPersonController : ThirdPersonAnimator
     {
         HandleInput();
         UpdateAnimator();
+    }
 
+    public IEnumerator UpdateRaycast()
+    {
+        while (true)
+        {
+            yield return new WaitForEndOfFrame();
+
+            CheckForwardAction();
+        }
     }
 
     private void FixedUpdate()
@@ -44,8 +60,8 @@ public class ThirdPersonController : ThirdPersonAnimator
         if (Input.GetMouseButton(1))
         {
             aiming = true;
-            rigBulider.layers[1].rig.weight = Mathf.Lerp(rigBulider.layers[1].rig.weight, 1, Time.deltaTime * smoothAim);
-            rigBulider.layers[2].rig.weight = Mathf.Lerp(rigBulider.layers[2].rig.weight, 1, Time.deltaTime * smoothAim);
+            rigBulider.layers[1].rig.weight = Mathf.Lerp(rigBulider.layers[1].rig.weight, 1f, Time.deltaTime * smoothAim);
+            rigBulider.layers[2].rig.weight = Mathf.Lerp(rigBulider.layers[2].rig.weight, 1f, Time.deltaTime * smoothAim);
         }
         else
         {
@@ -77,6 +93,7 @@ public class ThirdPersonController : ThirdPersonAnimator
             tpCamera.mouseX = tpCamera.Player.localEulerAngles.y;
         }
 
+        //ÉãÏñ»úÇÐ»»Ãé×¼
         if (aiming)
         {
             tpCamera.ChangeState("Aiming", true);
@@ -92,10 +109,46 @@ public class ThirdPersonController : ThirdPersonAnimator
         if (Input.GetMouseButton(0))
         {
             shooting = true;
+            weapon.ShootingFire();
+            weapon.GenerateRecoil();
         }
         else
         {
             shooting = false;
+        }
+    }
+
+    void CheckForwardAction()
+    {
+        Vector3 yOffSet = new Vector3(0f, -0.5f, 0f);
+        Vector3 fwd = transform.TransformDirection(Vector3.forward);
+        RaycastHit hitinfo;
+        Debug.DrawRay(transform.position - yOffSet, fwd * 0.45f, Color.blue);
+
+        if (Physics.Raycast(transform.position - yOffSet, fwd, out hitinfo, 0.45f))
+        {
+            if (hitinfo.collider.gameObject.CompareTag("JumpOver"))
+            {
+                DoAction(hitinfo, ref jumpOver);
+            }
+        }
+    }
+
+    void DoAction(RaycastHit hit, ref bool action)
+    {
+        var findTarget = hit.transform.GetComponent<FindTarget>();
+
+        if (Input.GetKey(KeyCode.E))
+        {
+            //print("HAHA");
+            // turn the action bool true and call the animation
+            action = true;
+
+            // find the target height to match with the character animation
+            matchTarget = findTarget.target;
+            // align the character rotation with the object rotation
+            var rot = hit.transform.rotation;
+            transform.rotation = rot;
         }
     }
 }
