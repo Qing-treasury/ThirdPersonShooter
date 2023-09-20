@@ -199,9 +199,13 @@ public class AISensor : MonoBehaviour
         }
 
         Gizmos.color = Color.red;
-        foreach (var obj in objects)
+
+        if (objects != null)
         {
-            Gizmos.DrawSphere(obj.transform.position + new Vector3(0,1.5f,0), 0.5f);
+            foreach (var obj in objects)
+            {
+                Gizmos.DrawSphere(obj.transform.position + new Vector3(0, 1.5f, 0), 0.5f);
+            }
         }
     }
 }

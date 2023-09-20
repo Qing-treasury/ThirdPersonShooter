@@ -23,7 +23,7 @@ public class Health : MonoBehaviour
         }
     }
 
-    //ÊÜÉË
+    //ï¿½ï¿½ï¿½ï¿½
     public void TakeDamage(float amount, Vector3 direction)
     {
         currentHealth -= amount;
@@ -33,7 +33,7 @@ public class Health : MonoBehaviour
         }
     }
 
-    //ËÀÍö
+    //ï¿½ï¿½ï¿½ï¿½
     private void Die()
     {
         iKControl.SetRagbollRig(false);

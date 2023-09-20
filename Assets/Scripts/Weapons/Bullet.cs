@@ -30,11 +30,11 @@ public class Bullet : MonoBehaviour
 
     void BulletMovement()
     {
-        //¼ÇÂ¼Î»ÖÃ
+        //ï¿½ï¿½Â¼Î»ï¿½ï¿½
         posRecord = transform.position;
-        //×Óµ¯ÏòÇ°·¢Éä
+        //ï¿½Óµï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½
         transform.position += transform.forward * speed * Time.deltaTime;
-        //¼ÆËãÒÆ¶¯¾àÀë
+        //ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½
         distance = (posRecord - transform.position).magnitude;
 
         if (distance > 0)

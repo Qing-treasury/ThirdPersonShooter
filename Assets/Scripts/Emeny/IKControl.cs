@@ -32,12 +32,12 @@ public class IKControl : MonoBehaviour
 
     public bool Aim;
 
-    [Header("----- ÎäÆ÷ÊÖ³ÖIKÎ»ÖÃ -----")]
+    [Header("----- ï¿½ï¿½ï¿½ï¿½ï¿½Ö³ï¿½IKÎ»ï¿½ï¿½ -----")]
     public Transform weaponHandle;
     public Transform weaponIdleTran;
     public Transform weaponAimTran;
 
-    [Header("----- Ãé×¼Ä¿±ê -----")]
+    [Header("----- ï¿½ï¿½×¼Ä¿ï¿½ï¿½ -----")]
     public Transform targetTransform;
     public Transform aimTransform;
     public Transform bone;
@@ -198,7 +198,7 @@ public class IKControl : MonoBehaviour
     }
 
     /// <summary>
-    /// ÉèÖÃ²¼ÍÞÍÞ ¸ÕÌå
+    /// ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     /// </summary>
     /// <param name="isIkinematic"></param>
     public void SetRagbollRig(bool isIkinematic)
@@ -213,7 +213,7 @@ public class IKControl : MonoBehaviour
     }
 
     /// <summary>
-    /// ²éÑ¯ËùÓÐ×ÓÎïÌå ÊÇ·ñÓÐ¸ÕÌå
+    /// ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ç·ï¿½ï¿½Ð¸ï¿½ï¿½ï¿½
     /// </summary>
     /// <param name="child"></param>
     void FindChid(GameObject child)
