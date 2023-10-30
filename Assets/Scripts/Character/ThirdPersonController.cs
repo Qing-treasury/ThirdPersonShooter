@@ -10,7 +10,11 @@ public class ThirdPersonController : ThirdPersonAnimator
     void Awake()
     {
         StartCoroutine("UpdateRaycast");
-        weapon = transform.Find("WeaponHolder").GetComponent<Weapon>();
+
+        if (weapon == null)
+        {
+            weapon = transform.Find("WeaponHolder").GetComponent<Weapon>();
+        }
     }
 
     public void Start()
@@ -60,14 +64,20 @@ public class ThirdPersonController : ThirdPersonAnimator
         if (Input.GetMouseButton(1))
         {
             aiming = true;
-            rigBulider.layers[1].rig.weight = Mathf.Lerp(rigBulider.layers[1].rig.weight, 1f, Time.deltaTime * smoothAim);
-            rigBulider.layers[2].rig.weight = Mathf.Lerp(rigBulider.layers[2].rig.weight, 1f, Time.deltaTime * smoothAim);
+            if (rigBulider != null)
+            {
+                rigBulider.layers[1].rig.weight = Mathf.Lerp(rigBulider.layers[1].rig.weight, 1f, Time.deltaTime * smoothAim);
+                rigBulider.layers[2].rig.weight = Mathf.Lerp(rigBulider.layers[2].rig.weight, 1f, Time.deltaTime * smoothAim);
+            }
         }
         else
         {
             aiming = false;
-            rigBulider.layers[1].rig.weight = Mathf.Lerp(rigBulider.layers[1].rig.weight, 0, Time.deltaTime * smoothAim);
-            rigBulider.layers[2].rig.weight = Mathf.Lerp(rigBulider.layers[2].rig.weight, 0, Time.deltaTime * smoothAim);
+            if (rigBulider != null)
+            {
+                rigBulider.layers[1].rig.weight = Mathf.Lerp(rigBulider.layers[1].rig.weight, 0, Time.deltaTime * smoothAim);
+                rigBulider.layers[2].rig.weight = Mathf.Lerp(rigBulider.layers[2].rig.weight, 0, Time.deltaTime * smoothAim);
+            }
         }
     }
 

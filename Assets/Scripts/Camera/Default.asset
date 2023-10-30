@@ -16,9 +16,9 @@ MonoBehaviour:
   tpCameraStates:
   - Name: Default
     forward: -1
-    right: 0.61
+    right: 0.2
     maxDistance: 2
-    minDistance: 0.95
+    minDistance: 0.9
     Height: 1.5
   - Name: Aiming
     forward: -1

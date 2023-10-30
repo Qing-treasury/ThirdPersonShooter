@@ -54,12 +54,12 @@ public class ThirdPersonAnimator : ThirdPersonMotor
 
                 if (Aim_vertical >= 1.2f)
                 {
-                    moveSpeed = 3f;
+                    moveSpeed = 1.5f;
                 }
             }
             else
             {
-                moveSpeed = 2f;
+                moveSpeed = 3.5f;
                 jogSmooth = 0;
             }
 
@@ -67,6 +67,7 @@ public class ThirdPersonAnimator : ThirdPersonMotor
         }
         else
         {
+            moveSpeed = 2f;
             animator.SetFloat("Vertical", vertical, 0.1f, Time.deltaTime);
             animator.SetFloat("Horizontal", horizontal, 0.1f, Time.deltaTime);
         }
