@@ -9,7 +9,8 @@ public class AISensor : MonoBehaviour
     public float distance = 10;
     public float angle = 30;
     public float height = 1.0f;
-    public Color meshColor = Color.red;
+    public Color meshColor = Color.blue;
+    public Color targetColor = Color.red;
 
     public int scanFrequency = 30;
     public LayerMask layers;
@@ -29,6 +30,8 @@ public class AISensor : MonoBehaviour
     int count;
     float scanInterval;
     float scanTimer;
+
+    public bool isGizmos;
 
     // Start is called before the first frame update
     void Start()
@@ -185,6 +188,9 @@ public class AISensor : MonoBehaviour
 
     private void OnDrawGizmos()
     {
+        if (!isGizmos)
+            return;
+
         if (mesh)
         {
             Gizmos.color = meshColor;
@@ -198,7 +204,7 @@ public class AISensor : MonoBehaviour
             Gizmos.DrawSphere(colliders[i].transform.position, 0.4f);
         }
 
-        Gizmos.color = Color.red;
+        Gizmos.color = targetColor;
 
         if (objects != null)
         {
