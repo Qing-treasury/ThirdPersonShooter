@@ -26,7 +26,6 @@ public class ChaseState : IState
 
         emenyParameter.navMeshAgent.Stop();
         emenyParameter.navMeshAgent.speed = 1f;
-        //emenyParameter.navMeshAgent.destination = emenyParameter.targetObj.transform.position;
 
         Debug.Log("进入追踪状态");
     }
@@ -46,19 +45,18 @@ public class ChaseState : IState
             if (fireTime <= 3)
             {
                 emenyParameter.weapon.ShootingFire();
-                //emenyParameter.animator.SetTrigger("Shooting");
             }
 
             if (fireTime > 8)
             {
                 fireTime = 0;
             }
+            Debug.Log("检测到有人");
         }
         else
         {
+            Debug.Log("检测到没有人");
             manager.TransitionState(StateType.Idle);
         }
-
-        //manager.CheckTarget();
     }
 }

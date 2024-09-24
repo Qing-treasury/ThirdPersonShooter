@@ -64,9 +64,11 @@ public class FSM : MonoBehaviour
     {
         currentState.OnUpdate();
 
+        emenyParameter.moveSpeed = Mathf.Abs(emenyParameter.navMeshAgent.desiredVelocity.sqrMagnitude);
+        emenyParameter.moveSpeed = Mathf.Clamp(emenyParameter.moveSpeed, 0, 0.5f);
+        emenyParameter.animator.SetFloat("Vertical", emenyParameter.moveSpeed, 0.1f, Time.deltaTime);
 
-        float moveSpeed = Mathf.Abs(emenyParameter.navMeshAgent.desiredVelocity.sqrMagnitude);
-        emenyParameter.animator.SetFloat("Vertical", moveSpeed, 0.1f, Time.deltaTime);
+        CheckTarget();
     }
 
     //¹ý¶É×´Ì¬
@@ -101,6 +103,8 @@ public class FSM : MonoBehaviour
         {
             emenyParameter.targetObj = null;
         }
+
+        //print("¼ì²âÄ¿±ê£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡");
     }
 
 

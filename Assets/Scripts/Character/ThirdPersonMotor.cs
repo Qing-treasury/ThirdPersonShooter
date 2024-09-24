@@ -5,7 +5,7 @@ using UnityEngine;
 public class ThirdPersonMotor : Character
 {
     //移动速度
-    public float moveSpeed = 2;
+    public float moveSpeed;
     //基于角色的旋转
     public Quaternion _rotation;
     //角色 旋转速度

@@ -43,7 +43,7 @@ public class IdleState : IState
             manager.TransitionState(StateType.Patrol);
         }
 
-        manager.CheckTarget();
+        //manager.CheckTarget();
     }
 
     public void OnExit()

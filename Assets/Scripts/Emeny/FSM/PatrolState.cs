@@ -31,7 +31,7 @@ public class PatrolState : IState
         patrolPosition = patrolPosition % emenyParameter.patrolPoint.Length;
 
         emenyParameter.navMeshAgent.speed = 0;
-        Debug.Log(patrolPosition);
+        //Debug.Log(patrolPosition);
     }
 
     public void OnUpdate()
@@ -41,10 +41,6 @@ public class PatrolState : IState
             manager.TransitionState(StateType.Idle);
         }
 
-        manager.CheckTarget();
-
-        //float moveSpeed = Mathf.Abs(emenyParameter.navMeshAgent.desiredVelocity.sqrMagnitude);
-        ////Debug.Log(moveSpeed);
-        //emenyParameter.animator.SetFloat("Vertical", moveSpeed, 0.1f, Time.deltaTime);
+        //manager.CheckTarget();
     }
 }
